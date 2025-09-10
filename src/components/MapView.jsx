@@ -53,7 +53,7 @@ export default function MapView() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/posts")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/api/posts`)
       .then((res) => setPosts(res.data))
       .catch((err) => console.error("Error fetching posts:", err));
   }, []);
