@@ -1,13 +1,89 @@
-# React + Vite
+# Reddit for Good - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend for visualizing Reddit posts on a map. Custom markers categorize posts (e.g., groceries, rides), and users can see post details via popups.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+(Replace with your actual screenshot)
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# reddit-for-good-frontend
+Map visualization of Reddit posts using React Leaflet.
+
+Custom markers based on post categories (grocery, ride, etc.).
+
+Permanent legend showing categories on the side.
+
+Popups with title, description, and link to Reddit post.
+
+Responsive and hackathon-ready UI.
+
+Tech Stack
+
+React + Vite
+
+Leaflet & React-Leaflet
+
+Axios (for API calls)
+
+TailwindCSS (styling)
+
+Render (backend hosting)
+
+Getting Started
+Prerequisites
+
+Node.js (v18+ recommended)
+
+NPM or Yarn
+
+Backend running (https://reddit-for-good-backend.onrender.com
+)
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/harshitsingh633/reddit-for-good-frontend.git
+cd reddit-for-good-frontend
+
+
+Install dependencies:
+
+npm install
+# or
+yarn
+
+
+Create .env file (optional):
+
+VITE_BACKEND_URL=https://reddit-for-good-backend.onrender.com
+
+
+Default backend URL will be http://localhost:5000 if .env is not provided.
+
+Start the development server:
+
+npm run dev
+# or
+yarn dev
+
+
+Open your browser:
+
+http://localhost:5173
+
+Folder Structure
+src/
+  components/
+    MapView.jsx        # Map and markers component
+    Legend.jsx         # Permanent legend component
+  App.jsx
+  main.jsx
+
+Usage
+
+Markers on the map are automatically categorized.
+
+Click a marker to see the post title, snippet, and Reddit link.
+
+Legend helps identify categories at a glance.
